@@ -1,0 +1,101 @@
+@infore-scrollbar-track-size: 16px;
+
+.infore-track {
+  position: absolute;
+  background: transparent;
+  opacity: 0;
+  transition:
+    background-color 0.3s ease-out,
+    border 0.3s ease-out,
+    opacity 0.3s ease-out;
+  user-select: none;
+
+  &.infore-track-show {
+    opacity: 1;
+  }
+
+  &.infore-y {
+    top: 0;
+    right: 0;
+    width: @infore-scrollbar-track-size;
+    height: 100%;
+    border-left: 1px solid transparent;
+
+    &.infore-active,
+    &:hover {
+      .infore-thumb {
+        width: @infore-scrollbar-track-size - 4;
+      }
+    }
+
+    .infore-thumb {
+      top: 0;
+      right: 2px;
+      width: 6px;
+
+      &:hover {
+        width: 12px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: @infore-scrollbar-track-size;
+        height: 100%;
+        content: '';
+      }
+    }
+  }
+
+  &.infore-x {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: @infore-scrollbar-track-size;
+    border-top: 1px solid transparent;
+
+    &.infore-active,
+    &:hover {
+      .infore-thumb {
+        height: @infore-scrollbar-track-size - 4;
+      }
+    }
+
+    .infore-thumb {
+      bottom: 2px;
+      left: 0;
+      height: 6px;
+
+      &:hover {
+        height: 12px;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: @infore-scrollbar-track-size;
+        content: '';
+      }
+    }
+  }
+
+  &.infore-active,
+  &:hover {
+    background: var(--infore-track-background);
+    border-color: var(--infore-track-border-color);
+    opacity: 1;
+  }
+
+  .infore-thumb {
+    position: absolute;
+    background: var(--infore-thumb-color);
+    border-radius: 6px;
+    transition:
+      width 0.3s ease-out,
+      height 0.3s ease-out;
+    user-select: none;
+  }
+}
