@@ -1,4 +1,4 @@
-# @infore/scroll-bar
+# @aliveyun/scroll-bar
 
 > macOS 样式的 React 滚动条组件
 
@@ -16,7 +16,7 @@
 ## 安装
 
 ```
-yarn add @infore/scroll-bar
+yarn add @aliveyun/scroll-bar
 ```
 
 ## 示例

@@ -1,6 +1,6 @@
-@infore-scrollbar-track-size: 16px;
+@aliveyun-scrollbar-track-size: 16px;
 
-.infore-track {
+.aliveyun-track {
   position: absolute;
   background: transparent;
   opacity: 0;
@@ -10,25 +10,25 @@
     opacity 0.3s ease-out;
   user-select: none;
 
-  &.infore-track-show {
+  &.aliveyun-track-show {
     opacity: 1;
   }
 
-  &.infore-y {
+  &.aliveyun-y {
     top: 0;
     right: 0;
-    width: @infore-scrollbar-track-size;
+    width: @aliveyun-scrollbar-track-size;
     height: 100%;
     border-left: 1px solid transparent;
 
-    &.infore-active,
+    &.aliveyun-active,
     &:hover {
-      .infore-thumb {
-        width: @infore-scrollbar-track-size - 4;
+      .aliveyun-thumb {
+        width: @aliveyun-scrollbar-track-size - 4;
       }
     }
 
-    .infore-thumb {
+    .aliveyun-thumb {
       top: 0;
       right: 2px;
       width: 6px;
@@ -41,28 +41,28 @@
         position: absolute;
         top: 0;
         right: -2px;
-        width: @infore-scrollbar-track-size;
+        width: @aliveyun-scrollbar-track-size;
         height: 100%;
         content: '';
       }
     }
   }
 
-  &.infore-x {
+  &.aliveyun-x {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: @infore-scrollbar-track-size;
+    height: @aliveyun-scrollbar-track-size;
     border-top: 1px solid transparent;
 
-    &.infore-active,
+    &.aliveyun-active,
     &:hover {
-      .infore-thumb {
-        height: @infore-scrollbar-track-size - 4;
+      .aliveyun-thumb {
+        height: @aliveyun-scrollbar-track-size - 4;
       }
     }
 
-    .infore-thumb {
+    .aliveyun-thumb {
       bottom: 2px;
       left: 0;
       height: 6px;
@@ -76,22 +76,22 @@
         bottom: -2px;
         left: 0;
         width: 100%;
-        height: @infore-scrollbar-track-size;
+        height: @aliveyun-scrollbar-track-size;
         content: '';
       }
     }
   }
 
-  &.infore-active,
+  &.aliveyun-active,
   &:hover {
-    background: var(--infore-track-background);
-    border-color: var(--infore-track-border-color);
+    background: var(--aliveyun-track-background);
+    border-color: var(--aliveyun-track-border-color);
     opacity: 1;
   }
 
-  .infore-thumb {
+  .aliveyun-thumb {
     position: absolute;
-    background: var(--infore-thumb-color);
+    background: var(--aliveyun-thumb-color);
     border-radius: 6px;
     transition:
       width 0.3s ease-out,

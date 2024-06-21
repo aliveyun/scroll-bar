@@ -52,14 +52,14 @@ export default function ScrollBar(_ref) {
     updateBarVisible(false);
   }
   return /*#__PURE__*/_jsxs(Wrapper, _objectSpread(_objectSpread({
-    className: classNames('infore-container', className),
+    className: classNames('aliveyun-container', className),
     ref: scrollBoxRef,
     onScroll: handleScroll,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave
   }, props), {}, {
     children: [/*#__PURE__*/_jsxs("div", {
-      className: classNames('infore-track-box', "infore-theme-".concat(theme), ghost ? 'infore-ghost' : ''),
+      className: classNames('aliveyun-track-box', "aliveyun-theme-".concat(theme), ghost ? 'aliveyun-ghost' : ''),
       children: [!suppressScrollX && horizontalBar, !suppressScrollY && verticalBar]
     }), children]
   }));

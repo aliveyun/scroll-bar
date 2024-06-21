@@ -20,14 +20,14 @@ function GlobalScrollbarInject(_ref) {
     return document.createElement('div');
   });
   useEffect(function () {
-    wrapper.classList.add("infore-theme-".concat(theme));
+    wrapper.classList.add("aliveyun-theme-".concat(theme));
     if (ghost) {
-      wrapper.classList.add("infore-ghost");
+      wrapper.classList.add("aliveyun-ghost");
     }
-    document.documentElement.classList.add('infore-container');
+    document.documentElement.classList.add('aliveyun-container');
     document.body.append(wrapper);
     return function () {
-      document.documentElement.classList.remove('infore-container');
+      document.documentElement.classList.remove('aliveyun-container');
       document.body.removeChild(wrapper);
     };
   }, [wrapper, theme, ghost]);

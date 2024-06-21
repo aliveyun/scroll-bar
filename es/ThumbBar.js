@@ -59,15 +59,15 @@ function ThumbBar(_ref) {
     position: 'fixed'
   } : (_ref4 = {}, _defineProperty(_ref4, sizeKey, offsetSize), _defineProperty(_ref4, "top", (horizontal ? clientHeight - trackSize : 0) - paddingTop), _defineProperty(_ref4, "left", (horizontal ? 0 : clientWidth - trackSize) - paddingLeft), _ref4);
   return /*#__PURE__*/_jsx("div", {
-    className: classNames('infore-track', horizontal ? 'infore-x' : 'infore-y', {
-      'infore-active': isPress,
-      'infore-track-show': visible
+    className: classNames('aliveyun-track', horizontal ? 'aliveyun-x' : 'aliveyun-y', {
+      'aliveyun-active': isPress,
+      'aliveyun-track-show': visible
     }),
     onClick: handleThumbBarClick,
     ref: grooveRef,
     style: style,
     children: /*#__PURE__*/_jsx("div", {
-      className: "infore-thumb",
+      className: "aliveyun-thumb",
       onMouseDown: handleStart,
       onClick: function onClick(e) {
         return e.stopPropagation();
